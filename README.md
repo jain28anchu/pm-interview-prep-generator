@@ -1,6 +1,6 @@
 # PM Interview Prep Generator
 
-Interactive PM interview preparation tool that generates:
+An interactive PM interview preparation tool that generates:
 
 - Tailored PM interview questions
 - Product sense frameworks
@@ -29,9 +29,6 @@ Interactive PM interview preparation tool that generates:
 - JavaScript
 - GitHub Pages
 
-## Screenshots
-
-(Add screenshots later)
 
 ## Author
 

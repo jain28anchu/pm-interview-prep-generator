@@ -35,4 +35,4 @@ Interactive PM interview preparation tool that generates:
 
 ## Author
 
-Anurag Jain
+Aanchal Jain

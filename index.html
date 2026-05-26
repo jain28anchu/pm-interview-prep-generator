@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PM Interview Prep Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="container">
+  <h1>PM Interview Prep Generator</h1>
+  <p class="subtitle">
+    Generate tailored PM interview questions, frameworks, coaching guidance, and mock interview feedback.
+  </p>
+
+  <div class="card">
+    <div class="input-group">
+      <label>Role Type</label>
+      <select id="role">
+        <option value="">Select Role</option>
+        <option>Product Manager</option>
+        <option>AI Product Manager</option>
+        <option>Platform PM</option>
+        <option>Growth PM</option>
+        <option>Technical PM</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Company Type</label>
+      <select id="company">
+        <option value="">Select Company Type</option>
+        <option>Big Tech</option>
+        <option>Startup</option>
+        <option>Fintech</option>
+        <option>SaaS</option>
+        <option>Marketplace</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Target Company</label>
+      <select id="targetCompany">
+        <option value="">Select Company</option>
+        <option>Amazon</option>
+        <option>Google</option>
+        <option>Meta</option>
+        <option>Microsoft</option>
+        <option>Adobe</option>
+        <option>SoFi</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Interview Round</label>
+      <select id="round">
+        <option value="">Select Round</option>
+        <option>Recruiter Screen</option>
+        <option>Product Sense</option>
+        <option>Execution</option>
+        <option>Strategy</option>
+        <option>Behavioral</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Difficulty</label>
+      <select id="difficulty">
+        <option value="">Select Difficulty</option>
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+      </select>
+    </div>
+
+    <div class="button-row">
+      <button onclick="generateQuestion()">Generate Prep</button>
+      <button class="secondary-btn" onclick="generateQuestion()">Generate Another</button>
+      <button class="secondary-btn" onclick="startMockInterview()">Start Mock Interview</button>
+      <button class="secondary-btn" onclick="copyOutput()">Copy Output</button>
+    </div>
+  </div>
+
+  <div class="output-card">
+    <pre id="output"></pre>
+  </div>
+
+  <div class="mock-card" id="mockCard">
+    <h2>Mock Interview Mode</h2>
+    <p id="mockQuestion"></p>
+
+    <textarea id="mockAnswer" placeholder="Type your answer here..."></textarea>
+
+    <div class="button-row">
+      <button onclick="evaluateAnswer()">Evaluate Answer</button>
+      <button class="secondary-btn" onclick="startMockInterview()">New Mock Question</button>
+    </div>
+
+    <pre id="feedback"></pre>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
